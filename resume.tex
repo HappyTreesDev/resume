@@ -1,0 +1,141 @@
+%% start of file `resume2016.tex'.
+%
+% This is my working resume created using the moderncv package
+% which is created and maintained by Xavier Danaux (xdanaux@gmail.com)
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{fontawesome}	% ensure fontawesome is used if needed
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{green}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.75, margin=0.5in, bmargin=1.0in]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% useful for multiline comments
+\usepackage{verbatim}
+
+% personal data
+\name{Robert}{Margolin-Ross}
+%\title{ResumÃ© title}                               % optional, remove / comment the line if not wanted
+\address{12363 Holly Street Unit D}{80241 Thornton, CO}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(720)~999~6831}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{r.ross404@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{robert-margolin-ross}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-7mm}
+
+%\section{Objective}
+%\cvitem{}{Software engineer with 3+ years of experience with a broad knowledge base looking for an entry to mid level job in the Greater Denver Area.}
+
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2016--Present}{Software Engineer}{AlsoEnergy Inc.}{Boulder, CO}{}{Develop large features for a new new React / C\# application on a tight deadline. \newline{}Designed and developed cross platform mobile application using Xamarin and worked closely with the back end team to develop a matching RESTful api.\newline{}Develop full stack application for solar monitoring using react and C\# as part of the larger team.\newline{}Tested and finished development of embedded Windows CE logging device.}
+\cventry{2019--Present}{Mobile Application Developer}{Rememorate}{}{}{Provide advice from expiernce developing within the Xamarin ecosystem. \newline{}Develop new features for contat based application taking advantage of native apis.}
+\cventry{2013--2016}{Associate Tech}{SapientNitro}{Boston, MA}{}{Worked with a globally distributed team to deliver client driven solutions.\newline{}A mix of front-end and back-end development on a plethora of diverse systems.}
+\begin{comment}
+\cventry{2012--2013}{Software Engineer Intern}{Harris Corporation}{Rochester, NY}{}{Assisted in design, development, and evaluation of automated test software for Harris Networking radios using propitiatory software.}
+\cventry{2012--2012}{Software Engineer Intern}{Harris Corporation}{Chelmsford, MA}{}{Tested, debugged, and developed for web based J2EE application.}
+\cventry{2011--2011}{Technical Intern}{Fidelity Investments}{Merrimack, NH}{}{Wrote unit tests for internal software.\newline{} Set up a test instance of confluence.}
+\subsection{Miscellaneous}
+\cventry{2010--2013}{Associate}{RIT Dining Services}{Rochester, NY}{}{Prepare and serve food, maintain a clean and orderly work environment}
+\cventry{2006--2012}{Customer Service Leader}{Hannaford Bros. Co.}{Raymond, NH}{}{Manage front end of grocery store by assigning work stations, completing daily list of tasks to do, and filling in where necessary.}
+\end{comment}
+
+\section{Projects}
+\subsection{AlsoEnergy}
+\cvitem{Software Engineer - Xamarin}{AlsoEnergy wished to bring their existing mobile applications in house so that they could better maintain and advance them as the company rapidly evolves. I was tasked with learning the Xamarin tools and developing a new and updated version of the applications that had feature parity with the old ones.
+	\begin{itemize}
+		\item Backwards engineered old application to utilize existing api
+		\item Helped push and drive development of new api to help expand upon flexibility
+		\item Maintained and published the two store listings for the new mobile applications
+		\item Provided ongoing support for the mobile application as well as added required new features
+	\end{itemize}}
+\cvitem{Software Engineer - React/C\#}{AlsoEnergy is continuously innovating in the industry and always developing new solutions. I have worked on this new effort within the company working closely to help take lessons learned from previous projects and create a new product as well as a more refined and stable development process.
+	\begin{itemize}
+		\item Work with the project manager and the design lead to rapidly bring features through UX design to implementation
+		\item Use the latest practices around React and C\# to create elegant, efficient, and maintainable code
+		\item Set reasonable deadlines and stick to them so that the project stays on track
+		\item Partake in architecture discussions and provide useful feedback
+	\end{itemize}}
+\subsection{SapientNitro}
+\cvitem{Developer -- Perl/Mason}{A leading audio service company develop a new educational audio experience focused for a foreign country. The project entailed working with a completely customized Perl/Mason stack to create and update front-end pages for the new product.
+	\begin{itemize}
+		\item Worked with I18n based coding styles to ensure the bilingual pages work correctly
+		\item Learned Perl/Mason from scratch for the project
+		\item Assisted in the design, development, testing, and debugging of the front facing web experience
+		\item Developed some pages designed to work in an Android webview
+	\end{itemize}}
+\begin{comment}
+\cvitem{Developer -- Adobe Experience Manager}{A leading education company wished to build a new platform based on Adobe Experience Manager. The project required recreating old e-commerce pages in the new system and working closely with the client.
+	\begin{itemize}
+		\item Developed Adobe AEM components that will work with dynamic data
+		\item Worked directly with the front-end team to make sure final display of data is correct
+		\item Fixed bugs with existing code
+	\end{itemize}}
+\cvitem{Developer -- Python}{Sapient Nitro Accelerated Prototyping is an internal Sapient research/learning process where a specific emerging technology or concept is explored and a prototype is designed and developed in a one month period. The application worked during this iteration of SNAP explored alternative machine control.The resulting system is a drawing machine that takes environmental data as the input.
+	\begin{itemize}
+		\item Assisted in the design of the entire drawing and input system
+		\item Designed and develop for Arduino in C and Raspberry Pi in Python
+		\item Maintained codebase entirely
+	\end{itemize}}
+\cvitem{Developer -- PHP}{The project was to create a new social network platform that allowed the creation of content on a mobile or desktop device and attach that information to a location. The project consisted of a MySQL back end with a PHP based RESTful API and a front end built on Backbone.js as well as an Android and iOS mobile application.
+	\begin{itemize}
+		\item Learned PHP with no previous experience in the language
+		\item Helped design and develop the RESTful endpoints and server functionality
+		\item Assessed the feasibility of data generation through the scraping of other data sources
+		\item Assisted in the design of the product
+	\end{itemize}}
+\end{comment}
+
+\section{Education}
+\cventry{2009--2013}{Bachelor of Science in Computer Science}{Rochester Institute of Technology}{Rochester, NY}{}{}  % arguments 3 to 6 can be left empty
+
+\section{Skills}
+\cvdoubleitem{Programming Languages}{C\#, Python, Java, Javascript, HTML, CSS, \LaTeXe}{Tools}{Vim, Visual Studio, Visual Studio Code, Eclipse, git, SVN, GitLab, Netsuite}
+
+\begin{comment}
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Name}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  \cvcolumn{Profession}{Among others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  \cvcolumn{Contact}{\textit{That} person, and \textbf{those} also (all available upon request).}
+  \cvcolumn{Relationship}{\begin{itemize}\item Person one\item person 2\end{itemize}}
+\end{cvcolumns}
+\end{comment}
+
+\end{document}
+
+
+%% end of file `resume2016.tex'.
